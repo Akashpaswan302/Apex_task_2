@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    background-color: #fff;
+}
+
+.main-container{
+    margin-top:30vh ;
+    margin-left: 15vw;
+    width: 70%;
+    height: 50vh;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 10px 15px;
+    overflow: hidden;
+    background-color: #fff;
+    
+}
+.left-box{
+    flex: 1;
+    width: 50%;
+    background:linear-gradient(to left , #b051ef, #bc03bc);
+    border-radius: 0px 45px 45px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftbox-content{
+    color:white;
+}
+.right-box{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+}
+.rightbox-content h1{
+    margin-left:60px;
+    color: black;
+    font-weight: 700;
+}
+.name{
+    margin-top: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 25px;
+}
+.mail{
+    height: 25px;
+    margin-top: 10px;
+    font-size: medium;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.btn button{
+    width: 100%;
+    height: 25px;
+    background:linear-gradient(to left , #b051ef, #bc03bc);
+    color: white;
+    font-size: medium;
+    font-weight: 600;
+    border: none;
+}
+
+@media (max-width: 600px){
+    .rightbox-content h1{
+        font-size:large;
+    }
+    .name{
+    margin-top: 10px;
+    font-size: small;
+}
+.mail{
+    margin-top: 10px;
+    font-size: small;
+}
+.btn{
+    width: 50%;
+    margin-left: 20%;
+}
+input{
+    font-size: small;
+    margin: auto;
+    width: auto;
+}
+}
+@media (min-width: 1120px){
+    .main-container{
+        width: 50%;
+        margin-left: 20vw;
+    }
+}
+
+.list-container{
+    margin-top:15%;
+    margin-left: 15vw;
+    margin-bottom: 100px;
+    width: 70%;
+    height: 50vh;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    flex-direction: column;
+    box-shadow: 2px 10px 15px;
+    overflow: hidden;
+    background:linear-gradient(to left , #b051ef, #bc03bc);
+}
+.list-heading{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.task{
+    width: 70%;
+    height: 40px;
+    padding: auto;
+    margin: auto;
+    font-size: larger;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+
+}
+.task input{
+    width: 80%;
+    font-weight: 700;
+    font-size: large;
+    border-radius: 8px;
+    border: none;
+     border:1px solid black;
+}
+.task button{
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    font-size: large;
+    background-color: white;
+    font-weight: 700;
+    box-shadow:2px 2px 5px;
+}
+
+.addbtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.newtaskContainer{
+    width: 70%;
+    height: 40px;
+    padding: auto;
+    margin: auto;
+    margin-top: 20px;
+    font-size: larger;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 15px;
+    width: 75%;
+    margin: auto;
+}
+li{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 5px;
+    height: 35px;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding:10px;
+}
+.task-List button{
+    background:linear-gradient(to left , #b051ef, #bc03bc);
+    color: white;
+    width: 10%;
+    border:1px solid black;
+    border-radius: 3px;
+    box-shadow:2px 2px 5px black;
+    font-size: large;
+    padding: auto;
+}
+
+@media (min-width: 1120px){
+    .list-container{
+        width: 50%;
+        margin-left: 20vw;
+    }
+    .task-List button{
+        width: 10%;
+    }
+    ul{
+        width: 73.5%;
+    }
+    li{
+        height: 38px;
+    }
+}
+
+

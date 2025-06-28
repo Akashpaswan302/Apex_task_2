@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex_task_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-box">
+            <div class="leftbox-content">
+                 <h1>Hello, there!</h1>
+            <p>create your account</p>
+            </div>
+           
+        </div>
+        <div class="right-box">
+            <div class="rightbox-content">
+                 <h1>Login</h1>
+                 Name : <input type="text" class="name" placeholder="Enter your name">
+                 <br>
+                 Email : <input type="email" class="mail" placeholder="Enter your email">
+                 <br>
+                 <div class="btn">
+                 <button type="submit">Login</button>
+                 </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--To-Do-List-->
+    <div class="list-container">
+        <div class="list-heading">
+            <h1>To-Do-List</h1>
+        </div>
+        <div class="task">
+        <input type="text" id="inputTask"  placeholder="Add-Task">
+        <button class="addbtn" onclick="addingTask()">Add</button>
+        </div>
+        <ul class="task-List" id="taskList">
+            
+        </ul>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
